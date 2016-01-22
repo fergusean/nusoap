@@ -222,7 +222,8 @@ class nusoap_base {
 	*
 	* @access	public
 	*/
-	function nusoap_base() {
+    public function __construct()
+    {
 		$this->debugLevel = $GLOBALS['_transient']['static']['nusoap_base']['globalDebugLevel'];
 	}
 
