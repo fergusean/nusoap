@@ -1,6 +1,6 @@
 {
     "name": "seismicmike/nusoap",
-    "description": "NuSOAP re-packaged for Packagist/Composer",
+    "description": "NuSOAP re-packaged for Packagist/Composer based on Fergusean with a bug fix.",
     "license": "LGPLv2",
     "authors": [
         {
