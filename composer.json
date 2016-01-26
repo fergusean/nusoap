@@ -1,6 +1,6 @@
 {
-    "name": "fergusean/nusoap",
-    "description": "NuSOAP re-packaged for Packagist/Composer",
+    "name": "seismicmike/nusoap",
+    "description": "NuSOAP re-packaged for Packagist/Composer based on Fergusean with a bug fix.",
     "license": "LGPLv2",
     "authors": [
         {
@@ -10,6 +10,10 @@
         {
             "name": "Scott Nichol",
             "homepage": "http://sourceforge.net/u/snichol/profile/"
+        },
+        {
+            "name": "Mike Lewis",
+            "e-mail": "seismicmike@gmail.com"
         }
     ],
     "autoload": {
