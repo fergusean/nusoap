@@ -1264,7 +1264,7 @@ class soap_transport_http extends nusoap_base {
 	 * @access	private
 	 */
 	function getCookiesForRequest($cookies, $secure=false) {
-		$cookie_str = '';
+		$cookie_str = array();
 		if ((! is_null($cookies)) && (is_array($cookies))) {
 			foreach ($cookies as $cookie) {
 				if (! is_array($cookie)) {
@@ -1299,7 +1299,7 @@ class soap_transport_http extends nusoap_base {
 	    		$this->debug('add cookie to Cookie-String: ' . $cookie['name'] . '=' . $cookie['value']);
 			}
 		}
-		return $cookie_str;
+		return empty($cookie_str) ? '' : implode('; ', $cookie_str);
   }
 }
 
