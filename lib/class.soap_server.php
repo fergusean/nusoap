@@ -991,6 +991,7 @@ class nusoap_server extends nusoap_base {
         	} else {
         		$SCHEME = 'http';
         	}
+			$SCRIPT_NAME = htmlspecialchars($SCRIPT_NAME, ENT_QUOTES | ENT_SUBSTITUTE, "UTF-8");
 			$soapaction = "$SCHEME://$SERVER_NAME$SCRIPT_NAME/$name";
 		}
 		if(false == $style) {
